@@ -707,11 +707,15 @@ img {
     border-left: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);
     border-right: 1px solid var(--color-border);
+    position: relative;
+    background-color: var(--background-color);
 }
 
 .projects-link {
     text-decoration: none;
     position: relative;
+    
+    overflow: hidden;
 }
 
 .detail {
@@ -721,8 +725,11 @@ img {
     justify-content: center;
     align-items: center;
     padding: 63px 24px;
-    z-index: -1;
     position: absolute;
+    transform: translatey(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -757,7 +764,8 @@ img {
 
 .projects-link:hover .detail,
 .projects-link:focus .detail {
-    z-index: 0;
+    z-index: 0;    
+    transform: translate(0);
 }
 
 
