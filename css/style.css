@@ -131,7 +131,7 @@ img {
 .header-link {
     display: block;
     color: var(--second-text-color);
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -287,7 +287,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
 }
 
 .achivements-item:not(:last-child) {
@@ -297,6 +296,7 @@ img {
 .achivements-div {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .achivements-item-title {
@@ -514,7 +514,7 @@ img {
     justify-content: center;
     align-items: center;
     margin: auto;
-    transition-property: color;
+    transition-property: color, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
